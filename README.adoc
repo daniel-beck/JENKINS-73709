@@ -1,0 +1,12 @@
+= About
+
+This project demonstrates a potential bug in maven-compiler-plugin (or more likely plexus-compiler), responsible for https://issues.jenkins.io/browse/JENKINS-73709[JENKINS-73709].
+
+= Usage
+
+```bash
+mvn clean install
+```
+
+Then https://github.com/daniel-beck/JENKINS-73709/blob/main/my-project-with-annotations/pom.xml#L33[enable `<fork>true</fork>`] and re-run.
+Compare build logs.
